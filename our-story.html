@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Babette">
+  <link href="assets/images/favicon/favicon.png" rel="icon">
+  <title>Babette</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Rubik:400,500,700%7cShadows+Into+Light&display=swap">
+  <link rel="stylesheet" href="assets/css/libraries.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- =========================
+        Header
+    =========================== -->
+    <header id="header" class="header header-transparent header-layout1">
+      <nav class="navbar navbar-expand-lg sticky-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="/">
+            <img width="128" height="100" src="assets/custom-images/Logo.png" class="logo-light" alt="logo" />
+            <img width="128" height="100" src="assets/custom-images/Logo.png" class="logo-dark" alt="logo" />
+          </a>
+          <button class="navbar-toggler" type="button" aria-label="line">
+            <span class="menu-lines"><span></span></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavigation">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav__item with-dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link active">Home</a>
+                <!-- <ul class="dropdown-menu">
+                    <li class="nav__item">
+                      <a href="index.html" class="nav__item-link">Home Main</a>
+                    </li>
+                  </ul> -->
+              </li>
+              <!-- /.nav-item -->
+              <li class="nav__item with-dropdown">
+                <a href="/our-story.html" class="dropdown-toggle nav__item-link">About</a>
+              </li>
+              <!-- /.nav-item -->
+              <li class="nav__item with-dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Menu</a>
+              </li>
+              <!-- /.nav-item -->
+              <li class="nav__item with-dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Contact Us</a>
+              </li>
+              <!-- /.nav-item -->
+              <li class="nav__item with-dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">FAQs</a>
+              </li>
+            </ul>
+            <!-- /.navbar-nav -->
+          </div>
+          <!-- /.navbar-collapse -->
+          <div class="navbar-actions-wrap">
+            <div class="navbar-actions d-flex align-items-center">
+              <a href="#" class="navbar__action-btn search-popup-trigger" aria-label="search"><i
+                  class="fa fa-search"></i></a>
+              <a href="reservation.html"
+                class="navbar__action-btn navbar__action-btn-reserve btn btn__primary">Reservation</a>
+              <ul class="social__icons">
+                <li>
+                  <a href="https://www.facebook.com/VietThaiRestaurante" target="_blank" aria-label="fb"><i
+                      class="fa fa-facebook"></i></a>
+                </li>
+              </ul>
+              <!-- /.social__icons -->
+            </div>
+            <!-- /.navbar-actions -->
+          </div>
+          <!-- /.navbar-actions-wrap -->
+        </div>
+        <!-- /.container -->
+      </nav>
+      <!-- /.navabr -->
+    </header>
+    <!-- /.Header -->
+
+    <!-- ========================
+       page title 
+    =========================== -->
+    <section id="page-title" class="page-title page-title-layout1 text-center bg-overlay bg-overlay-2 bg-parallax">
+      <div class="bg-img"><img src="assets/custom-images/9.png" alt="background"></div>
+      <svg class="pagetitle__divider-shape" xmlns="http://www.w3.org/2000/svg" width="22" height="61"
+        viewBox="0 0 22 61">
+        <path
+          d="M799,769h2v61h-2V769Zm8,24.8a0.969,0.969,0,0,0-1.911,0,3.012,3.012,0,0,1-.883,2.16,4.486,4.486,0,0,0,0,6.136,3.083,3.083,0,0,1,0,4.32,4.486,4.486,0,0,0,0,6.136,3.088,3.088,0,0,1,0,4.325,4.5,4.5,0,0,0,0,6.142,3.014,3.014,0,0,1,.884,2.163,0.969,0.969,0,0,0,1.911,0,4.414,4.414,0,0,0-1.213-3.07,3.091,3.091,0,0,1,0-4.328,4.491,4.491,0,0,0,0-6.14,3.08,3.08,0,0,1,0-4.319,4.488,4.488,0,0,0,0-6.137,3.081,3.081,0,0,1,0-4.32A4.407,4.407,0,0,0,807,793.8Zm0-20a0.969,0.969,0,0,0-1.911,0,3.014,3.014,0,0,1-.883,2.16,4.486,4.486,0,0,0,0,6.136,3.083,3.083,0,0,1,0,4.32,4.488,4.488,0,0,0,0,6.137,3.087,3.087,0,0,1,0,4.324,4.5,4.5,0,0,0,0,6.142,3.014,3.014,0,0,1,.884,2.163,0.969,0.969,0,0,0,1.911,0,4.414,4.414,0,0,0-1.213-3.07,3.089,3.089,0,0,1,0-4.327,4.491,4.491,0,0,0,0-6.14,3.081,3.081,0,0,1,0-4.32,4.488,4.488,0,0,0,0-6.137,3.081,3.081,0,0,1,0-4.32A4.409,4.409,0,0,0,807,773.8ZM793,793.8a0.969,0.969,0,0,1,1.911,0,3.012,3.012,0,0,0,.883,2.16,4.486,4.486,0,0,1,0,6.136,3.083,3.083,0,0,0,0,4.32,4.486,4.486,0,0,1,0,6.136,3.088,3.088,0,0,0,0,4.325,4.5,4.5,0,0,1,0,6.142,3.014,3.014,0,0,0-.884,2.163,0.969,0.969,0,0,1-1.911,0,4.414,4.414,0,0,1,1.213-3.07,3.091,3.091,0,0,0,0-4.328,4.491,4.491,0,0,1,0-6.14,3.08,3.08,0,0,0,0-4.319,4.488,4.488,0,0,1,0-6.137,3.081,3.081,0,0,0,0-4.32A4.407,4.407,0,0,1,793,793.8Zm0-20a0.969,0.969,0,0,1,1.911,0,3.014,3.014,0,0,0,.883,2.16,4.486,4.486,0,0,1,0,6.136,3.083,3.083,0,0,0,0,4.32,4.488,4.488,0,0,1,0,6.137,3.087,3.087,0,0,0,0,4.324,4.5,4.5,0,0,1,0,6.142,3.014,3.014,0,0,0-.884,2.163,0.969,0.969,0,0,1-1.911,0,4.414,4.414,0,0,1,1.213-3.07,3.089,3.089,0,0,0,0-4.327,4.491,4.491,0,0,1,0-6.14,3.081,3.081,0,0,0,0-4.32,4.488,4.488,0,0,1,0-6.137,3.081,3.081,0,0,0,0-4.32A4.409,4.409,0,0,1,793,773.8Zm-4,5.2h2v41h-2V779Zm20,0h2v41h-2V779Z"
+          transform="translate(-789 -769)"></path>
+      </svg>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <span class="pagetitle__subheading">All About Us</span>
+            <h1 class="pagetitle__heading">Our Story</h1>
+          </div><!-- /.col-lg-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.page-title -->
+
+    <!-- =====================
+       Banner layout1
+    ======================== -->
+    <section id="bannerLayout1" class="banner banner-layout1 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="banner__content">
+              <div class="banner__content-text" data-aos="fade-right">
+                <div class="banner__content-text-inner">
+                  <div class="heading">
+                    <span class="heading__subtitle">Viet-Thai</span>
+                    <h2 class="heading__title">Welcome To Viet-Thai</h2>
+                    <div class="heading__icon">
+                      <svg fill="#000000" height="28px" width="28px" version="1.1" id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 512.511 512.511" xml:space="preserve" stroke="2">
+                        <path
+                          d="M506.861,134.209c1.6-6,2.4-26-24-43.2c5.2-17.6,7.6-44.4-2.8-67.2c-0.8-2-3.2-2.8-5.2-2l-31.2,11.6 c-1.2,0.4-2,1.2-2.4,2.4c-0.4,1.2,0,2.4,0.4,3.6c6.4,9.2,16.4,26.8,16.8,44.4c-16.8-1.2-39.2,3.2-47.2,18 c-6.8,2.8-13.2,6.4-19.2,10.8c-23.6,17.2-33.2,54.4-44.8,97.6c-28,105.6-66.8,250.8-333.6,241.6c-9.2-0.4-13.2,4.8-13.6,10 c-0.8,8.4,6.4,18.4,15.2,20c34.8,6,68.8,9.2,101.6,9.2c104,0,197.2-30.4,269.6-89.2c76.4-62,123.6-151.2,126-238.8 C512.861,152.609,510.861,143.009,506.861,134.209z M462.461,92.209c1.2,0,2.4,0,3.2-0.8c0.8-0.8,1.2-1.6,1.6-2.8 c1.2-18.4-7.2-36.4-15.6-49.2l22.8-8.4c8.4,21.2,5.6,46,0.4,60.8c-0.8,1.6,0,3.6,1.6,4.8c20,12,23.2,25.2,23.6,32.4 c-4-1.6-8-2-12-2c-6.8,0-12,2-16.8,4c-6,2.4-11.2,4-16.8,1.2c-7.6-3.6-9.2-10.8-10.8-18.8l-0.4-2c-0.8-4.4-5.2-9.6-19.6-10 C432.061,93.009,449.661,90.609,462.461,92.209z M505.661,162.609c-3.2,85.2-49.2,172.4-123.6,232.8 c-93.2,75.6-222.8,103.6-364.8,78c-4.8-0.8-8.8-7.2-8.4-11.2c0-0.8,0.4-2.8,5.6-2.8c120.8,4,206.8-22.4,262.8-80.4 c48-49.6,65.2-114.8,79.2-167.2c11.2-41.6,20.8-77.6,41.6-92.8c5.6-4,11.6-7.6,18-10c1.2,0,3.6-0.4,6.4-0.4c8.4,0,12.4,2,12.8,3.6 l0.4,2c1.6,8.4,4,19.2,15.2,24.4c3.2,1.6,6.4,2.4,10,2.4c4.8,0,9.2-1.6,13.2-3.2c4.4-1.6,8.8-3.2,14-3.2c4,0,8,0.8,12.8,2.8 C504.461,145.009,506.061,153.409,505.661,162.609z">
+                        </path>
+                        <path
+                          d="M414.061,136.209c-1.2-1.6-2.8-2.4-4.8-1.2c-8,6-14.8,18-22,38.8c-0.8,2,0.4,4.4,2.4,5.2c0.4,0,0.8,0.4,1.2,0.4 c1.6,0,3.2-1.2,3.6-2.8c6.4-18.8,12.4-30,18.8-34.8C414.861,140.609,415.261,137.809,414.061,136.209z">
+                        </path>
+                        <path
+                          d="M332.061,401.809c-0.8-2.4-3.2-2.8-5.2-1.6c-31.2,18.8-65.6,33.2-102.4,42.4c-2,0.4-3.6,2.8-2.8,4.8c0.4,2,2,3.2,4,3.2 c0.4,0,0.8,0,0.8,0c37.6-9.2,72.8-24,104.4-43.2C332.861,406.209,333.261,403.809,332.061,401.809z">
+                        </path>
+                        <path
+                          d="M384.061,199.009c-2-0.4-4.4,0.8-4.8,2.8c-1.2,4.8-2.8,9.6-4,14.8v0.4c-7.2,27.6-15.6,58.8-28.8,90c-0.8,2,0,4.4,2,5.2 c0.4,0.4,1.2,0.4,1.6,0.4c1.6,0,3.2-0.8,3.6-2.4c13.2-31.6,21.6-63.2,29.2-91.2v-0.4c1.2-4.8,2.8-10,4-14.8 C387.661,201.809,386.061,199.409,384.061,199.009z">
+                        </path>
+                      </svg>
+                    </div>
+                    <p class="heading__desc">
+                      Experience the perfect balance of sweet, savory, spicy, and tangy in every bite. Celebrate the
+                      convergence of Vietnam and Thailand on your plate. Come, savor the remarkable gastronomic
+                      adventure that awaits you at Viet Thai Restaurante.
+                    </p>
+                    <!-- <img src="assets/images/about/signature.png" alt="signature"> -->
+                  </div><!-- /.heading -->
+                </div><!-- /.banner__content-text-inner -->
+              </div><!-- /.banner__content-text -->
+              <div class="banner__content-img" data-aos="fade-left" style="position: relative;">
+                <div style="position: absolute; height: 100%; width: 25px; background-color: white; top: 0; left: 60%;">
+                </div>
+                <div style="position: absolute; height: 40px; width: 40%; background-color: white; top: 0; right: 0;">
+                </div>
+                <div
+                  style="position: absolute; height: 40px; width: 40%; background-color: white; bottom: 0; right: 0;">
+                </div>
+                <img src="assets/custom-images/22.png" alt="banner">
+              </div><!-- /.banner__content-img -->
+            </div><!-- /.banner__content -->
+          </div><!-- /.col-lg-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.Banner layout1 -->
+
+
+    <!-- ==========================
+         fancybox layout 1
+    =========================== -->
+    <section id="fancyboxLayout1" class="fancybox-layout1 text-center pb-40">
+      <div class="container">
+        <div class="row">
+          <!-- fancybox item #1 -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="fancybox-item">
+              <div class="fancybox__icon">
+                <img width="48" height="48" src="assets/icons/1.png" alt="icon">
+              </div><!-- /.fancybox-icon -->
+              <div class="fancybox__content">
+                <h4 class="fancybox__title">Authenticity </h4>
+                <p class="fancybox__desc">Genuine Vietnamese and Thai flavors are crafted with traditional techniques
+                  and authentic ingredients for an immersive culinary experience.</p>
+              </div><!-- /.fancybox-content -->
+            </div><!-- /.fancybox-item -->
+          </div><!-- /.col-lg-4 -->
+          <!-- fancybox item #2 -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="fancybox-item">
+              <div class="fancybox__icon">
+                <img width="48" height="48" src="assets/icons/2.png" alt="icon">
+              </div><!-- /.fancybox-icon -->
+              <div class="fancybox__content">
+                <h4 class="fancybox__title">Fresh Ingredient</h4>
+                <p class="fancybox__desc">An extensive menu offering a diverse array of Vietnamese and Thai dishes to
+                  satisfy every palate and dietary preference.</p>
+              </div><!-- /.fancybox-content -->
+            </div><!-- /.fancybox-item -->
+          </div><!-- /.col-lg-4 -->
+          <!-- fancybox item #3 -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="fancybox-item">
+              <div class="fancybox__icon">
+                <img width="48" height="48" src="assets/icons/3.png" alt="icon">
+              </div><!-- /.fancybox-icon -->
+              <div class="fancybox__content">
+                <h4 class="fancybox__title">Fusion </h4>
+                <p class="fancybox__desc">Seamlessly blending Vietnamese and Thai culinary traditions to create a
+                  harmonious fusion of flavors and culinary artistry</p>
+              </div><!-- /.fancybox-content -->
+            </div><!-- /.fancybox-item -->
+          </div><!-- /.col-lg-4 -->
+          <!-- fancybox item #4 -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="fancybox-item">
+              <div class="fancybox__icon">
+                <img width="48" height="48" src="assets/icons/4.png" alt="icon">
+              </div><!-- /.fancybox-icon -->
+              <div class="fancybox__content">
+                <h4 class="fancybox__title">Freshness</h4>
+                <p class="fancybox__desc">Locally-sourced, fresh ingredients bursting with vibrant flavors, ensuring
+                  each dish captures the true essence of Vietnamese and Thai cuisine.</p>
+              </div><!-- /.fancybox-content -->
+            </div><!-- /.fancybox-item -->
+          </div><!-- /.col-lg-4 -->
+          <!-- fancybox item #5 -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="fancybox-item">
+              <div class="fancybox__icon">
+                <img width="48" height="48" src="assets/icons/5.png" alt="icon">
+              </div><!-- /.fancybox-icon -->
+              <div class="fancybox__content">
+                <h4 class="fancybox__title">Hospitality</h4>
+                <p class="fancybox__desc">Warm and friendly service that ensures guests feel valued, creating a
+                  welcoming and inviting atmosphere throughout their dining experience.</p>
+              </div><!-- /.fancybox-content -->
+            </div><!-- /.fancybox-item -->
+          </div><!-- /.col-lg-4 -->
+          <!-- fancybox item #6 -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="fancybox-item">
+              <div class="fancybox__icon">
+                <img width="48" height="48" src="assets/icons/6.png" alt="icon">
+              </div><!-- /.fancybox-icon -->
+              <div class="fancybox__content">
+                <h4 class="fancybox__title">Ambiance</h4>
+                <p class="fancybox__desc">A captivating dining ambiance that transports guests to the vibrant streets of
+                  Vietnam and Thailand, enhancing the overall sensory experience.</p>
+              </div><!-- /.fancybox-content -->
+            </div><!-- /.fancybox-item -->
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /. fancybox layout 1 -->
+
+    <!-- ========================
+       Text Banner layout 1
+    =========================== -->
+    <section id="textBanner"
+      class="text-banner text-banner-layout1 text-center bg-overlay bg-overlay-gradient bg-parallax">
+      <div class="bg-img"><img src="assets/custom-images/5.png" alt="background"></div>
+      <svg class="divider-shape" xmlns="http://www.w3.org/2000/svg" width="142" height="17" viewBox="0 0 142 17">
+        <path
+          d="M800,600V583c8.782,15.985,46.811,11.315,56,12a35.721,35.721,0,0,1,15,5m-71,0V583c-8.782,15.985-46.811,11.315-56,12a35.717,35.717,0,0,0-15,5"
+          transform="translate(-729 -583)"></path>
+      </svg>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <span class="banner__subtitle">Book Your Table</span>
+            <h2 class="banner__title">Make A Reservation</h2>
+          </div><!-- /.col-lg-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.textBanner layout 1 -->
+
+    <!-- ========================
+      Reservation
+    =========================== -->
+    <section id="reservation" class="reservation">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+            <div class="heading text-center mb-30">
+              <p class="heading__desc">You can book a table online easily in just a minute. Reservations are for lunch
+                and dinner, check the availability of your table & book it now!</p>
+            </div><!-- /.heading -->
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-8 offset-lg-2">
+            <form>
+              <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <select class="form-control">
+                      <option value="2">2 people</option>
+                      <option value="3">3 people</option>
+                      <option value="4">4 people</option>
+                      <option value="5">5 people</option>
+                      <option value="6">6 people</option>
+                      <option value="7">7 people</option>
+                    </select>
+                  </div>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <select class="form-control">
+                      <option value="23">March 23, 2020</option>
+                      <option value="24">March 24, 2020</option>
+                      <option value="25">March 25, 2020</option>
+                      <option value="26">March 26, 2020</option>
+                    </select>
+                  </div>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <select class="form-control">
+                      <option value="8">8:00 PM</option>
+                      <option value="9">9:00 PM</option>
+                      <option value="10">10:00 PM</option>
+                      <option value="11">11:00 PM</option>
+                    </select>
+                  </div>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <button type="submit" class="btn btn__primary btn__block">Find A Table</button>
+                </div><!-- /.col-lg-12 -->
+              </div><!-- /.row -->
+            </form>
+          </div><!-- /.col-lg-8 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.Reservation -->
+
+    <!-- ========================
+      Footer
+    ========================== -->
+    <footer id="footer" class="footer footer-layout1 text-center bg-dark">
+      <div class="footer-inner">
+        <div class="container">
+          <div class="footer-top">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12 position-static">
+                <svg class="footer__divider-shape" xmlns="http://www.w3.org/2000/svg" width="22" height="61"
+                  viewBox="0 0 22 61">
+                  <path
+                    d="M799,769h2v61h-2V769Zm8,24.8a0.969,0.969,0,0,0-1.911,0,3.012,3.012,0,0,1-.883,2.16,4.486,4.486,0,0,0,0,6.136,3.083,3.083,0,0,1,0,4.32,4.486,4.486,0,0,0,0,6.136,3.088,3.088,0,0,1,0,4.325,4.5,4.5,0,0,0,0,6.142,3.014,3.014,0,0,1,.884,2.163,0.969,0.969,0,0,0,1.911,0,4.414,4.414,0,0,0-1.213-3.07,3.091,3.091,0,0,1,0-4.328,4.491,4.491,0,0,0,0-6.14,3.08,3.08,0,0,1,0-4.319,4.488,4.488,0,0,0,0-6.137,3.081,3.081,0,0,1,0-4.32A4.407,4.407,0,0,0,807,793.8Zm0-20a0.969,0.969,0,0,0-1.911,0,3.014,3.014,0,0,1-.883,2.16,4.486,4.486,0,0,0,0,6.136,3.083,3.083,0,0,1,0,4.32,4.488,4.488,0,0,0,0,6.137,3.087,3.087,0,0,1,0,4.324,4.5,4.5,0,0,0,0,6.142,3.014,3.014,0,0,1,.884,2.163,0.969,0.969,0,0,0,1.911,0,4.414,4.414,0,0,0-1.213-3.07,3.089,3.089,0,0,1,0-4.327,4.491,4.491,0,0,0,0-6.14,3.081,3.081,0,0,1,0-4.32,4.488,4.488,0,0,0,0-6.137,3.081,3.081,0,0,1,0-4.32A4.409,4.409,0,0,0,807,773.8ZM793,793.8a0.969,0.969,0,0,1,1.911,0,3.012,3.012,0,0,0,.883,2.16,4.486,4.486,0,0,1,0,6.136,3.083,3.083,0,0,0,0,4.32,4.486,4.486,0,0,1,0,6.136,3.088,3.088,0,0,0,0,4.325,4.5,4.5,0,0,1,0,6.142,3.014,3.014,0,0,0-.884,2.163,0.969,0.969,0,0,1-1.911,0,4.414,4.414,0,0,1,1.213-3.07,3.091,3.091,0,0,0,0-4.328,4.491,4.491,0,0,1,0-6.14,3.08,3.08,0,0,0,0-4.319,4.488,4.488,0,0,1,0-6.137,3.081,3.081,0,0,0,0-4.32A4.407,4.407,0,0,1,793,793.8Zm0-20a0.969,0.969,0,0,1,1.911,0,3.014,3.014,0,0,0,.883,2.16,4.486,4.486,0,0,1,0,6.136,3.083,3.083,0,0,0,0,4.32,4.488,4.488,0,0,1,0,6.137,3.087,3.087,0,0,0,0,4.324,4.5,4.5,0,0,1,0,6.142,3.014,3.014,0,0,0-.884,2.163,0.969,0.969,0,0,1-1.911,0,4.414,4.414,0,0,1,1.213-3.07,3.089,3.089,0,0,0,0-4.327,4.491,4.491,0,0,1,0-6.14,3.081,3.081,0,0,0,0-4.32,4.488,4.488,0,0,1,0-6.137,3.081,3.081,0,0,0,0-4.32A4.409,4.409,0,0,1,793,773.8Zm-4,5.2h2v41h-2V779Zm20,0h2v41h-2V779Z"
+                    transform="translate(-789 -769)"></path>
+                </svg>
+              </div>
+              <!-- /.col-lg-12 -->
+              <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="contact-box">
+                  <h6 class="contact__box-title">Our Address</h6>
+                  <ul class="contact__box-list list-unstyled">
+                    <li>
+                      Estr. de Benfica 439 1500-078 Lisbon, Portugal.
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.contact-box -->
+              </div>
+              <!-- /.col-lg-4 -->
+              <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="contact-box">
+                  <h6 class="contact__box-title">Opening Hours</h6>
+                  <ul class="contact__box-list list-unstyled">
+                    <li>Week days: 12 AM - 3 PM , 7 PM - 10 PM</li>
+                    <li>Saturday: 12 AM - 3 PM , 7 PM - 10 PM</li>
+                    <li>Sunday: Day off</li>
+                  </ul>
+                </div>
+                <!-- /.contact-box -->
+              </div>
+              <!-- /.col-lg-4 -->
+              <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="contact-box">
+                  <h6 class="contact__box-title">Private Dinning</h6>
+                  <ul class="contact__box-list list-unstyled">
+                    <li>
+                      <span>Phone:</span><a href="tel:020101236547"> +351 967 856 581</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.contact-box -->
+              </div>
+              <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.footer-top -->
+          <div class="footer-middle">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12 position-static">
+                <div class="footer__logo-wrap text-center">
+                  <img src="assets/custom-images/Logo.png" width="300px" height="115px" alt="logo"
+                    style="object-fit: contain;" class="footer__logo" />
+                </div>
+              </div>
+              <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+                <p class="mb-20">
+                  Step into our welcoming and contemporary ambiance, where you'll find a warm and friendly atmosphere
+                  that reflects our dedication to exceptional hospitality. Our attentive staff is here to guide you
+                  through your culinary journey, providing personalized service and ensuring your dining experience
+                  exceeds your expectations.
+                </p>
+                <a href="reservation.html" class="btn btn__primary btn__bordered btn__lg">Book Your Table Now!</a>
+              </div>
+              <!-- /.col-lg-6 -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.footer-middle -->
+        </div>
+        <!-- /.container -->
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="footer__copyright mb-30">
+                  <span>&copy; Viet-Thai with Love </span>
+                  <!-- <a href="http://themeforest.net/user/7oroof" class="color-theme">7oroof.com</a> -->
+                </div>
+                <ul class="social__icons social__icons-white justify-content-center">
+                  <li>
+                    <a href="https://www.facebook.com/VietThaiRestaurante" target="_blank" aria-label="fb"><i
+                        class="fa fa-facebook"></i></a>
+                  </li>
+
+                </ul>
+                <!-- /.social__icons -->
+              </div>
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container -->
+          <svg class="footer__divider-shape-bottom" xmlns="http://www.w3.org/2000/svg" width="142" height="17"
+            viewBox="0 0 142 17">
+            <path
+              d="M800,600V583c8.782,15.985,46.811,11.315,56,12a35.721,35.721,0,0,1,15,5m-71,0V583c-8.782,15.985-46.811,11.315-56,12a35.717,35.717,0,0,0-15,5"
+              transform="translate(-729 -583)"></path>
+          </svg>
+        </div>
+        <!-- /.Footer-bottom -->
+      </div>
+      <!-- /.Footer-inner -->
+    </footer>
+    <!-- /.Footer -->
+
+
+    <button id="scrollTopBtn"><i class="fa fa-angle-up"></i></button>
+
+    <div class="search-popup">
+      <i class="fa fa-times close-search"></i>
+      <form class="module__search-form">
+        <input type="text" class="search__input" placeholder="Type Words Then Enter">
+        <button class="module__search-btn"><i class="fa fa-search"></i></button>
+      </form>
+    </div><!-- /.search-popup -->
+
+  </div>
+  <!-- /.wrapper -->
+
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
