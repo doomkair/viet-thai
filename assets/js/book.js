@@ -27,6 +27,7 @@ function book() {
     .then((data) => {
       // The response comes here
       console.log(data);
+      alert("Successfully!");
     })
     .catch((error) => {
       // Errors are reported there
